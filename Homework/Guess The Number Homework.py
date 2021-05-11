@@ -9,7 +9,7 @@ number = random.randint(1, 10)
 while guess != number:
     print("That is not my number")
     time.sleep(1)
-    number = int(input("Try and guess my number: "))
+    guess = int(input("Try and guess my number: "))
 
 if guess == number:
     print("Yay you guessed my number!")
