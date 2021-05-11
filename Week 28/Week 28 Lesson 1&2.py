@@ -4,10 +4,12 @@
 # Task 1
 answer = input("What is the capital of France? ")
 answer = answer.title()
+counter = 0
 
 while answer != "Paris":
     answer = input("Incorrect, try again: ")
     answer = answer.title()
+    counter = counter + 1
 
 print("Correct! Well done.")
 
@@ -17,6 +19,7 @@ answer = answer.title()
 while answer != "B":
     answer = input("Incorrect, try again: ")
     answer = answer.title()
+    counter = counter + 1
 
 print("Correct! Well done.")
 
@@ -26,6 +29,7 @@ answer = answer.title()
 while answer != "21":
     answer = input("Incorrect, try again: ")
     answer = answer.title()
+    counter = counter + 1
 
 print("Ya Stoopid. :P")
 
@@ -35,6 +39,7 @@ answer = answer.title()
 while answer != "36":
     answer = input("Incorrect, try again: ")
     answer = answer.title()
+    counter = counter + 1
 
 print("Correct! Well done.")
 
@@ -44,8 +49,10 @@ answer = answer.title()
 while answer != "1945":
     answer = input("Incorrect, try again: ")
     answer = answer.title()
+    counter = counter + 1
 
 print("Correct! Well done.")
+print("You finished the quiz with", counter, "mistakes!")
 
 # ---------------------------------------------------------------------------------------------------------------
 
