@@ -70,4 +70,9 @@ while attempts != 3:
     attempts = attempts + 1
     password = input("Password: ")
 
+if attempts == 3:
+    print("MACHINE LOCKED")
+else:
+    print("Error Occurred :P")
+
 # ---------------------------------------------------------------------------------------------------------------
