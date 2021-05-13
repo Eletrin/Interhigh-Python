@@ -59,6 +59,15 @@ print("You finished the quiz with", counter, "mistakes!")
 # Lesson 2
 # ---------------------------------------------------------------------------------------------------------------
 
-# To Be Continued
+password = input("Password: ")
+attempts = 0
+
+while attempts != 3:
+    if password == "Billy":
+        print("Access Granted")
+    else:
+        print("Access Denied")
+    attempts = attempts + 1
+    password = input("Password: ")
 
 # ---------------------------------------------------------------------------------------------------------------
