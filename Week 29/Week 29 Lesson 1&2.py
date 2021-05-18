@@ -26,8 +26,10 @@ while guess != number:
     guess = int(input("Answer: "))
     if guess > number:
         print("My number is lower, try again")
-    else:
+    elif guess < number:
         print("My number is higher, try again")
+    else:
+        break
     counter = counter + 1
 
 if guess == number:
