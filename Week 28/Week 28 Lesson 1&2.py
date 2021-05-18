@@ -1,3 +1,7 @@
+# Imports
+import time
+import random
+
 # Lesson 1
 # ---------------------------------------------------------------------------------------------------------------
 
@@ -59,6 +63,7 @@ print("You finished the quiz with", counter, "mistakes!")
 # Lesson 2
 # ---------------------------------------------------------------------------------------------------------------
 
+# Task 1
 attempts = 0
 
 while password != "Billy" or attempts != 3:
@@ -71,6 +76,37 @@ while password != "Billy" or attempts != 3:
 
 if attempts == 3:
     print("MACHINE LOCKED")
+else:
+    print("Error Occurred :P")
+
+# Task 2
+print("Hello Player, Welcome to the Guess My Number Game :D")
+time.sleep(1)
+print("I am going to think of a number between 1 to 100")
+time.sleep(0.5)
+print(".")
+time.sleep(0.5)
+print("..")
+time.sleep(0.5)
+print("...")
+time.sleep(1)
+print("Okay I have thought of one, try and guess it!")
+
+number = random.randint(1, 100)
+counter = 0
+guess = "UNDEFINED"
+
+while guess != number:
+    guess = int(input("Answer: "))
+    if guess > number:
+        print("My number is higher, try again")
+    else:
+        print("My number is lower, try again")
+    counter = counter + 1
+
+if guess == number:
+    print("Well done you guessed my number :D")
+    print("You took", counter, "attempts")
 else:
     print("Error Occurred :P")
 
