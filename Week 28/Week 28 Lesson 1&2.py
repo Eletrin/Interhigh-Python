@@ -1,5 +1,4 @@
 # Imports
-import time
 import random
 
 # Lesson 1
@@ -80,34 +79,26 @@ else:
     print("Error Occurred :P")
 
 # Task 2
-print("Hello Player, Welcome to the Guess My Number Game :D")
-time.sleep(1)
-print("I am going to think of a number between 1 to 100")
-time.sleep(0.5)
-print(".")
-time.sleep(0.5)
-print("..")
-time.sleep(0.5)
-print("...")
-time.sleep(1)
-print("Okay I have thought of one, try and guess it!")
+print("      *****************************")
+print("          Guess My Number Game")
+print("      *****************************")
+print("I Have Thought Of A Number Between 1 And 100")
+print("")
 
 number = random.randint(1, 100)
-counter = 0
-guess = "UNDEFINED"
+counter = 1
+guess = int(input("Answer: "))
 
 while guess != number:
-    guess = int(input("Answer: "))
     if guess > number:
-        print("My number is higher, try again")
+        print("My number is lower, try again!")
     else:
-        print("My number is lower, try again")
+        print("My number is higher, try again!")
+    guess = int(input("Answer: "))
     counter = counter + 1
 
-if guess == number:
-    print("Well done you guessed my number :D")
-    print("You took", counter, "attempts")
-else:
-    print("Error Occurred :P")
+print(" ")
+print("Well done you guessed my number :D")
+print("You took", counter, "attempts")
 
 # ---------------------------------------------------------------------------------------------------------------
