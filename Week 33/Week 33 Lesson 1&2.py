@@ -41,4 +41,5 @@ for b in range(4):
     totalWage = totalWage + wages[b]
 
 print("£"+str(totalWage), "Million all together")
+
 # ---------------------------------------------------------------------------------------------------------------
