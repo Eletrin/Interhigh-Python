@@ -20,6 +20,25 @@ print(heroes)
 # Lesson 2
 # ---------------------------------------------------------------------------------------------------------------
 
-# TO BE CONTINUED
+# Task 1
+villains = ["The Joker", "Magneto", "Red Mist", "Doc Ock"]
 
+# Task 2
+for counter in range(4):
+    print(villains[counter])
+
+# Task 3
+wages = [21, 17, 3, 5]
+
+# Task 4
+for i in range(4):
+    print(villains[i]+": £"+str(wages[i]), "Million")
+
+# Task 5
+totalWage = 0
+
+for b in range(4):
+    totalWage = totalWage + wages[b]
+
+print("£"+str(totalWage), "Million all together")
 # ---------------------------------------------------------------------------------------------------------------
